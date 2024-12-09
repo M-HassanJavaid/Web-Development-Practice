@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background-color: rgba(0, 255, 255, 0.448);
+        }
+
+
+        .space{
+            border: none;
+            background-color: rgba(0, 255, 255, 0);
+            transition-property: none;
+        }
+
+        .space:hover{
+            transform: scale(1);
+        }
+
+        .number {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        td{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f3ff00bd;
+            transition-property: all;
+            transition-duration: 0.5s;
+            animation-name: animation;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+
+        td:hover{
+            transform: scale(1.2);
+        }
+
+        .caption {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        @keyframes animation {
+
+            30%{
+                border-radius: 50%;
+            }
+
+            60%{
+                border-radius: 30%;
+            }
+
+            90%{
+                border-radius: 10%;
+            }
+
+            100%{
+                border-radius: 10px;
+            }
+        }
+
+    </style>
+</head>
+
+<!-- total coloumn = 19 -->
+<!-- total row = 10 -->
+
+<body>
+    <table cellspacing="10" border="2">
+
+        <!-- First row -->
+
+        <tr>
+            <td>
+                <p class="number">1</p>
+                <h1>H </h1>
+                <p class="caption">Hydrogen</p>
+            </td>
+            <td colspan="17" class="space"></td>
+            <td>
+                <p class="number">2</p>
+                <h1>He</h1>
+                <p class="caption">Helium</p>
+            </td>
+        </tr>
+
+        <!-- Second row -->
+
+        <tr>
+            <td>
+                <p class="number">3</p>
+                <h1>Li</h1>
+                <p class="caption">Lithium</p>
+            </td>
+            <td>
+                <p class="number">4</p>
+                <h1>Be</h1>
+                <p class="caption">Berylium</p>
+            </td>
+            <td colspan="11" class="space"></td>
+            <td>
+                <p class="number">5</p>
+                <h1>B</h1>
+                <p class="caption">Boron</p>
+            </td>
+            <td>
+                <p class="number">6</p>
+                <h1>C</h1>
+                <p class="caption">Carbon</p>
+            </td>
+            <td>
+                <p class="number">7</p>
+                <h1>N</h1>
+                <p class="caption">Nitrogen</p>
+            </td>
+            <td>
+                <p class="number">8</p>
+                <h1>O</h1>
+                <p class="caption">Oxygen</p>
+            </td>
+            <td>
+                <p class="number">9</p>
+                <h1>F</h1>
+                <p class="caption">Flourine</p>
+            </td>
+            <td>
+                <p class="number">10</p>
+                <h1>Ne</h1>
+                <p class="caption">Neon</p>
+            </td>
+        </tr>
+
+        <!-- Third row -->
+
+        <tr>
+            <td>
+                <p class="number">11</p>
+                <h1>Na</h1>
+                <p class="caption"> Sodium </p>
+            </td>
+            <td>
+                <p class="number">12</p>
+                <h1>Mg</h1>
+                <p class="caption"> Magnetism </p>
+            </td>
+            <td colspan="11" class="space"></td>
+            <td>
+                <p class="number">13</p>
+                <h1>AL</h1>
+                <p class="caption">Almunium</p>
+            </td>
+            <td>
+                <p class="number">14</p>
+                <h1>Si</h1>
+                <p class="caption">Silicon</p>
+            </td>
+            <td>
+                <p class="number">15</p>
+                <h1>P</h1>
+                <p class="caption">Phosphorus</p>
+            </td>
+            <td>
+                <p class="number">16</p>
+                <h1>S</h1>
+                <p class="caption">Sulphur</p>
+            </td>
+            <td>
+                <p class="number">17</p>
+                <h1>Cl</h1>
+                <p class="caption">Chlorine</p>
+            </td>
+            <td>
+                <p class="number">18</p>
+                <h1>Ar</h1>
+                <p class="caption">Argon</p>
+            </td>
+        </tr>
+        <!-- fourth row -->
+        <tr>
+            <td>
+                <p class="number">19</p>
+                <h1>K</h1>
+                <p class="caption"> Potassium</p>
+            </td>
+            <td>
+                <p class="number">20</p>
+                <h1>Ca</h1>
+                <p class="caption">Calcium</p>
+            </td>
+            <td>
+                <p class="number">21</p>
+                <h1>Sc</h1>
+                <p class="caption">Scandium</p>
+            </td>
+            <td class="space"></td>
+            <td>
+                <p class="number">22</p>
+                <h1>Ti</h1>
+                <p class="caption">Titanium</p>
+            </td>
+            <td>
+                <p class="number">23</p>
+                <h1>V</h1>
+                <p class="caption">Vanadium</p>
+            </td>
+            <td>
+                <p class="number">24</p>
+                <h1>Cr</h1>
+                <p class="caption">Chromium</p>
+            </td>
+            <td>
+                <p class="number">25</p>
+                <h1>Mn</h1>
+                <p class="caption">Manganese</p>
+            </td>
+            <td>
+                <p class="number">26</p>
+                <h1>Fe</h1>
+                <p class="caption">Iron</p>
+            </td>
+            <td>
+                <p class="number">27</p>
+                <h1>Co</h1>
+                <p class="caption">Cobalt</p>
+            </td>
+            <td>
+                <p class="number">28</p>
+                <h1>Ni</h1>
+                <p class="caption">Nickel</p>
+            </td>
+            <td>
+                <p class="number">29</p>
+                <h1>Cu</h1>
+                <p class="caption">Copper</p>
+            </td>
+            <td>
+                <p class="number">30</p>
+                <h1>Zn</h1>
+                <p class="caption">Zinc</p>
+            </td>
+            <td>
+                <p class="number">31</p>
+                <h1>Ga</h1>
+                <p class="caption">Gallium</p>
+            </td>
+            <td>
+                <p class="number">32</p>
+                <h1>Ge</h1>
+                <p class="caption">Germanium</p>
+            </td>
+            <td>
+                <p class="number">33</p>
+                <h1>As</h1>
+                <p class="caption">Arsenic</p>
+            </td>
+            <td>
+                <p class="number">34</p>
+                <h1>Se</h1>
+                <p class="caption">Selenium</p>
+            </td>
+            <td>
+                <p class="number">35</p>
+                <h1>Br</h1>
+                <p class="caption">Bromine</p>
+            </td>
+            <td>
+                <p class="number">36</p>
+                <h1>Kr</h1>
+                <p class="caption">Krypton</p>
+            </td>
+        </tr>
+        <!-- fith row -->
+        <tr>
+            <td>
+                <p class="number">37</p>
+                <h1>Cs</h1>
+                <p class="caption"> Caseium</p>
+            </td>
+            <td>
+                <p class="number">38</p>
+                <h1>Ba</h1>
+                <p class="caption">Barium</p>
+            </td>
+            <td>
+                <p class="number">39</p>
+                <h1>La</h1>
+                <p class="caption">Lanthanum</p>
+            </td>
+            <td class="space"></td>
+            <td>
+                <p class="number">40</p>
+                <h1>Hf</h1>
+                <p class="caption">Hafnium</p>
+            </td>
+            <td>
+                <p class="number">41</p>
+                <h1>Ta</h1>
+                <p class="caption">Tantalum</p>
+            </td>
+            <td>
+                <p class="number">42</p>
+                <h1>W</h1>
+                <p class="caption">Tungsten</p>
+            </td>
+            <td>
+                <p class="number">43</p>
+                <h1>Re</h1>
+                <p class="caption">Rhenium</p>
+            </td>
+            <td>
+                <p class="number">44</p>
+                <h1>Rh</h1>
+                <p class="caption">Rhodium</p>
+            </td>
+            <td>
+                <p class="number">45</p>
+                <h1>Os</h1>
+                <p class="caption">Osmium</p>
+            </td>
+            <td>
+                <p class="number">46</p>
+                <h1>Ir</h1>
+                <p class="caption">Iridium</p>
+            </td>
+            <td>
+                <p class="number">47</p>
+                <h1>Pt</h1>
+                <p class="caption">Platinum</p>
+            </td>
+            <td>
+                <p class="number">48</p>
+                <h1>Au</h1>
+                <p class="caption">Gold</p>
+            </td>
+            <td>
+                <p class="number">49</p>
+                <h1>Hg</h1>
+                <p class="caption">Mercury</p>
+            </td>
+            <td>
+                <p class="number">50</p>
+                <h1>Pb</h1>
+                <p class="caption">Lead</p>
+            </td>
+            <td>
+                <p class="number">51</p>
+                <h1>Bi</h1>
+                <p class="caption">Bismuth</p>
+            </td>
+            <td>
+                <p class="number">52</p>
+                <h1>Po</h1>
+                <p class="caption">Polonium</p>
+            </td>
+            <td>
+                <p class="number">53</p>
+                <h1>At</h1>
+                <p class="caption">Astatine</p>
+            </td>
+            <td>
+                <p class="number">54</p>
+                <h1>Rn</h1>
+                <p class="caption">Radon</p>
+            </td>
+        </tr>
+        <!-- sixth row -->
+        <tr>
+            <td>
+                <p class="number">55</p>
+                <h1>Rb</h1>
+                <p class="caption"> Rubidium</p>
+            </td>
+            <td>
+                <p class="number">56</p>
+                <h1>Sr</h1>
+                <p class="caption">Stradium</p>
+            </td>
+            <td>
+                <p class="number">57</p>
+                <h1>Y</h1>
+                <p class="caption">Yitrium</p>
+            </td>
+            <td class="space"></td>
+            <td>
+                <p class="number">58</p>
+                <h1>No</h1>
+                <p class="caption">Nioblum</p>
+            </td>
+            <td>
+                <p class="number">59</p>
+                <h1>Mo</h1>
+                <p class="caption">Molybdenum</p>
+            </td>
+            <td>
+                <p class="number">60</p>
+                <h1>Tc</h1>
+                <p class="caption">Technetium</p>
+            </td>
+            <td>
+                <p class="number">61</p>
+                <h1>Ro</h1>
+                <p class="caption">Ruthenium</p>
+            </td>
+            <td>
+                <p class="number">62</p>
+                <h1>Rh</h1>
+                <p class="caption">Rhodium</p>
+            </td>
+            <td>
+                <p class="number">63</p>
+                <h1>Pd</h1>
+                <p class="caption">Palladium</p>
+            </td>
+            <td>
+                <p class="number">64</p>
+                <h1>Ag</h1>
+                <p class="caption">Silver</p>
+            </td>
+            <td>
+                <p class="number">65</p>
+                <h1>Cd</h1>
+                <p class="caption">Cadmium</p>
+            </td>
+            <td>
+                <p class="number">66</p>
+                <h1>In</h1>
+                <p class="caption">Indium</p>
+            </td>
+            <td>
+                <p class="number">67</p>
+                <h1>Sn</h1>
+                <p class="caption">Tin</p>
+            </td>
+            <td>
+                <p class="number">68</p>
+                <h1>Sb</h1>
+                <p class="caption">Antimony</p>
+            </td>
+            <td>
+                <p class="number">69</p>
+                <h1>Te</h1>
+                <p class="caption">Tellurium</p>
+            </td>
+            <td>
+                <p class="number">70</p>
+                <h1>I</h1>
+                <p class="caption">Iodine</p>
+            </td>
+            <td>
+                <p class="number">71</p>
+                <h1>Xe</h1>
+                <p class="caption">Xenon</p>
+            </td>
+            <td>
+                <p class="number">72</p>
+                <h1>Kr</h1>
+                <p class="caption">Krypton</p>
+            </td>
+        </tr>
+        <!-- seventh row -->
+        <tr>
+            <td>
+                <p class="number">73</p>
+                <h1>Fr</h1>
+                <p class="caption"> Francium</p>
+            </td>
+            <td>
+                <p class="number">74</p>
+                <h1>Ra</h1>
+                <p class="caption">Radium</p>
+            </td>
+            <td>
+                <p class="number">75</p>
+                <h1>Ac</h1>
+                <p class="caption">Actinium</p>
+            </td>
+            <td class="space"></td>
+            <td>
+                <p class="number">76</p>
+                <h1>Rf</h1>
+                <p class="caption">Rutherfordium</p>
+            </td>
+            <td>
+                <p class="number">77</p>
+                <h1>Db</h1>
+                <p class="caption">Dubnium</p>
+            </td>
+            <td>
+                <p class="number">78</p>
+                <h1>Sg</h1>
+                <p class="caption">Seaborgium</p>
+            </td>
+            <td>
+                <p class="number">79</p>
+                <h1>Bh</h1>
+                <p class="caption">Bohrium</p>
+            </td>
+            <td>
+                <p class="number">80</p>
+                <h1>Hs</h1>
+                <p class="caption">Hassium</p>
+            </td>
+            <td>
+                <p class="number">81</p>
+                <h1>Mt</h1>
+                <p class="caption">Miethenarium</p>
+            </td>
+            <td>
+                <p class="number">82</p>
+                <h1>Ds</h1>
+                <p class="caption">Darmstadium</p>
+            </td>
+            <td>
+                <p class="number">83</p>
+                <h1>Rg</h1>
+                <p class="caption">Roentganium</p>
+            </td>
+            <td>
+                <p class="number">84</p>
+                <h1>Cn</h1>
+                <p class="caption">Copemicium</p>
+            </td>
+            <td>
+                <p class="number">85</p>
+                <h1>Nh</h1>
+                <p class="caption">Nihonium</p>
+            </td>
+            <td>
+                <p class="number">86</p>
+                <h1>Fl</h1>
+                <p class="caption">Fleverovium</p>
+            </td>
+            <td>
+                <p class="number">87</p>
+                <h1>Mc</h1>
+                <p class="caption">Moscovium</p>
+            </td>
+            <td>
+                <p class="number">88</p>
+                <h1>Lv</h1>
+                <p class="caption">Livemorium</p>
+            </td>
+            <td>
+                <p class="number">89</p>
+                <h1>Tn</h1>
+                <p class="caption">Tennessine</p>
+            </td>
+            <td>
+                <p class="number">90</p>
+                <h1>Og</h1>
+                <p class="caption">Oganesson</p>
+            </td>
+        </tr>
+        <!-- eight row -->
+        <tr>
+            <td colspan="18" class="space"></td>
+        </tr>
+        <!-- nine row -->
+        <tr>
+            <td colspan="4" class="space"></td>
+            <td>
+                <p class="number">91</p>
+                <h1>Ce</h1>
+                <p class="caption">Cerium</p>
+            </td>
+            <td>
+                <p class="number">92</p>
+                <h1>Pr</h1>
+                <p class="caption">Presodrymium</p>
+            </td>
+            <td>
+                <p class="number">93</p>
+                <h1>Nd</h1>
+                <p class="caption">Neodymium</p>
+            </td>
+            <td>
+                <p class="number">94</p>
+                <h1>Pm</h1>
+                <p class="caption">Promethium</p>
+            </td>
+            <td>
+                <p class="number">95</p>
+                <h1>Sm</h1>
+                <p class="caption">Samarium</p>
+            </td>
+            <td>
+                <p class="number">96</p>
+                <h1>Eu</h1>
+                <p class="caption">Europium</p>
+            </td>
+            <td>
+                <p class="number">97</p>
+                <h1>Gd</h1>
+                <p class="caption">Gadolinium</p>
+            </td>
+            <td>
+                <p class="number">98</p>
+                <h1>Tb</h1>
+                <p class="caption">Terbium</p>
+            </td>
+            <td>
+                <p class="number">99</p>
+                <h1>Dy</h1>
+                <p class="caption">Dysprosium</p>
+            </td>
+            <td>
+                <p class="number">100</p>
+                <h1>Ho</h1>
+                <p class="caption">Holmium</p>
+            </td>
+            <td>
+                <p class="number">101</p>
+                <h1>Er</h1>
+                <p class="caption">Erbium</p>
+            </td>
+            <td>
+                <p class="number">102</p>
+                <h1>Th</h1>
+                <p class="caption">Thulium</p>
+            </td>
+            <td>
+                <p class="number">103</p>
+                <h1>Yb</h1>
+                <p class="caption">Ytterbium</p>
+            </td>
+            <td>
+                <p class="number">104</p>
+                <h1>Lu</h1>
+                <p class="caption">Lutetium</p>
+            </td>
+        </tr>
+        <!-- ten row -->
+        <tr>
+            <td colspan="4" class="space"></td>
+            <td>
+                <p class="number">105</p>
+                <h1>Th</h1>
+                <p class="caption">Thorium</p>
+            </td>
+            <td>
+                <p class="number">106</p>
+                <h1>Pa</h1>
+                <p class="caption">Protectinium</p>
+            </td>
+            <td>
+                <p class="number">107</p>
+                <h1>U</h1>
+                <p class="caption">Uranium</p>
+            </td>
+            <td>
+                <p class="number">108</p>
+                <h1>Np</h1>
+                <p class="caption">Neptunium</p>
+            </td>
+            <td>
+                <p class="number">109</p>
+                <h1>Pu</h1>
+                <p class="caption">Plutonium</p>
+            </td>
+            <td>
+                <p class="number">110</p>
+                <h1>Am</h1>
+                <p class="caption">Americium</p>
+            </td>
+            <td>
+                <p class="number">111</p>
+                <h1>Cm</h1>
+                <p class="caption">Curium</p>
+            </td>
+            <td>
+                <p class="number"></p>
+                <h1>Bk</h1>
+                <p class="caption">Barkelium</p>
+            </td>
+            <td>
+                <p class="number">112</p>
+                <h1>Cf</h1>
+                <p class="caption">Califomium</p>
+            </td>
+            <td>
+                <p class="number">113</p>
+                <h1>Es</h1>
+                <p class="caption">Eienstenium</p>
+            </td>
+            <td>
+                <p class="number">114</p>
+                <h1>Fr</h1>
+                <p class="caption">Fermium</p>
+            </td>
+            <td>
+                <p class="number">115</p>
+                <h1>Md</h1>
+                <p class="caption">Medevelium</p>
+            </td>
+            <td>
+                <p class="number">116</p>
+                <h1>No</h1>
+                <p class="caption">Nobellium</p>
+            </td>
+            <td>
+                <p class="number">117</p>
+                <h1>Lr</h1>
+                <p class="caption">Lawrencium</p>
+            </td>
+        </tr>
+
+
+    </table>
+</body>
+
+</html>
