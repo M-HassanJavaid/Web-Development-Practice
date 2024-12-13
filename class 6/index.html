@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="url" method="get">
+        <input type="text" name="username" maxlength="5" placeholder="Type your name" />
+
+        <input type="password" name="password" maxlength="6" placeholder="password" />
+        <br><br>
+        <textarea name="comments" cols="10" rows="10"></textarea>
+        <p>select your favourite game</p>
+        <input type="radio" name="game" value="GTA V"> GTA V
+        <input type="radio" name="game" value="IGI"> IGI
+        <input type="radio" name="game" value="Cunter strike" checked> Cunter strike
+        <input type="radio" name="game" value="Tekken 3"> Tekken 3
+        <br><br>
+        <p>please select your favourite sports</p>
+        <input type="checkbox" value="cricket" name="sports"> cricket
+        <input type="checkbox" value="Hockey" name="sports"> Hockey
+        <input type="checkbox" value="football" name="sports"> football
+        <p>select now</p>
+        <select name="games" id="" multiple>
+            <option value="snocker" >snocker</option>
+            <option value="carrom" selected>carrom</option>
+            <option value="video games">video games</option>
+        </select>
+        <br><br>
+        <select name="games" id="">
+            <option value="snocker" >snocker</option>
+            <option value="carrom" selected>carrom</option>
+            <option value="video games">video games</option>
+        </select>
+        <p>Upload you asignment</p>
+        <input type="file" name="file" id="">
+        <br><br>
+        <input type="submit" value="signup">
+    </form>
+</body>
+
+</html>
