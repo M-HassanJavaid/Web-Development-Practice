@@ -1,0 +1,68 @@
+#text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 255, 0, 0.335);
+    margin: auto;
+    height: 200vh;
+    border: solid;
+    border-width: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: 1000;
+    font-style: italic;
+    line-height: 110px;
+    text-align: justify;
+    text-shadow: 5px 5px 10px red;
+    /* vertical-align: ; */
+    /* animation-name: animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; */
+    
+
+}
+
+h1{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+    background-color: aqua;
+    text-decoration: dotted;
+    text-align: right;
+}
+
+#me{
+    text-transform: uppercase;
+    background-color: blue;
+    color: white;
+    word-spacing: 50px;
+    letter-spacing: 10px;
+    padding: 10px;
+    
+
+}
+
+/* practice */
+
+#me:focus{
+    display: none;
+}
+
+@keyframes animate{
+
+    25%{
+        transform: rotate(45deg) ;
+    }
+
+    50%{
+        transform: rotate(90deg);
+    }
+
+    75%{
+        transform: rotate(135deg);
+    }
+
+    100%{
+        transform: rotate(180deg);
+    }
+
+}
