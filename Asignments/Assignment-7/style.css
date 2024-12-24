@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: lightskyblue;
+    
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 2s;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+h1:hover{
+    scale: 1.5;
+    background-color: rgba(255, 0, 0, 0.644);
+}
+
+img{
+    width: 50%;
+    transition-property: all;
+    transition-duration: 3s;
+    border: 15px double black;
+    border-radius: 10px;
+}
+
+img:hover{
+    rotate: 360deg;
+}
+
