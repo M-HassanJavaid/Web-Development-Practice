@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-container img{
+    width: 270px;
+    display: block;
+    margin: 10px auto;
+}
+
+.product-container{
+    display: inline-block;
+    margin: 0px 13px;
+    width: 410px;
+    padding: 13px;
+    background-color: #005ff638;
+    border: 6px solid black;
+    border-radius: 25px;
+    transition-property: all;
+    transition-duration: 1.5s;
+}
+
+
+.main-container{
+    /* height: 535px; */
+    padding: 15px 45px;
+    
+}
+
+.p-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+#img1{
+    margin-bottom: 16px;
+}
+
+#img2{
+    margin-bottom:  43px;
+    margin-top: 62px;
+}
+
+#img4{
+    margin-top: 67px;
+    margin-bottom: 67px
+}
+
+#img5{
+    margin-top: 17px;
+    margin-bottom: 40px;
+}
+
+.p-description{
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: yellow;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 1px solid black;
+}
+
+.price{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+button{
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    transition-property: all ;
+    transition-duration: 1s;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: yellow;
+    color: red;
+}
+
+.product-container:hover{
+    scale: 1.1;
+}
