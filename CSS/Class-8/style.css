@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img{
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 0px auto;
+}
+
+.container{
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://media.istockphoto.com/id/157373207/photo/balanced-stones-on-a-pebble-beach-during-sunset.jpg?s=612x612&w=0&k=20&c=V4Lua2fcDJmGiTb_JQu2EP6XmFLuAo7e3eI3cUXPNec=');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 2rem;
+    text-align: center;
+    background-attachment: scroll;
+    overflow: auto;
+}
+
+@media (max-width: 900px) {
+    
+    .container{
+        color: yellow;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .container{
+        color: blue;
+    }
+}
+
+
+
