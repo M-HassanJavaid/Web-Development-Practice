@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#box{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 255, 255, 0.333);
+    position: relative;
+}
+
+#container{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    text-align: center;
+    align-content: center;
+    font-size: 4rem;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+    /* transition-delay: 1s;
+    transition-timing-function: ease;
+    transition: all 1s ease 0.1s;  Property, duration, timing function, delay; */
+     animation-name: animate;
+     animation-duration: 3s;
+     /* animation-delay: 2s; */
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+     position: absolute;
+}
+
+#container:hover{
+    background-color: yellow;
+    animation-play-state: paused;
+}
+
+
+@keyframes animate{
+
+    0%{
+        left: 0%;
+        transform: translate(0%, 0%);
+        top: 0%;
+    }
+
+    50%{
+        left: 50%;
+        transform: translate(-50%, 0%);
+        top: 0;
+    }
+
+    100%{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) ;
+    }
+
+
+}
