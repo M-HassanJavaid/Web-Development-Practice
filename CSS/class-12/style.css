@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+:root{
+    --bg: rgba(0, 0, 255, 0.154);
+}
+
+.sub-container{
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+    background-color: var(--bg);
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    transition-property: all;
+    transition-duration: 1s;
+    cursor: pointer;
+    
+}
+
+.sub-container:hover{
+    box-shadow: 2px 1px 10px 12px;
+    /* scale: 0.8; */
+}
+
+.sub-container h1, .sub-container p{
+    margin: 10px;
+}
+
+#cont1:hover{
+    transform: rotate(180deg);
+}
+
+#cont2:hover{
+    transform: skew(2);
+}
+
+#cont4:hover{
+    transform: skew(60deg);
+}
+
+

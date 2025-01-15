@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black
+}
+
+#box{
+    border: 2px solid white;
+    height: 400px;
+    width: 400px;
+    background: linear-gradient( red , blue , green);
+    transition-property: all;
+    transition-duration: 5s;
+}
+/* #box:hover{
+    background: linear-gradient(45deg, red 99%, blue);
+} */
