@@ -1,0 +1,22 @@
+.fa-solid {
+    color: blue;
+}
+
+.box1 {
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: red;
+}
+
+.box2 {
+    font-family: "Playwrite IN", serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.box3{
+    font-family: "Lexend Giga", serif;
+    user-select: all;
+}
