@@ -87,14 +87,14 @@ document.write(`
       <p>Your Total Cost is ${TotalCost}</p>
     </div>
 
-    `)
+    `);
 
 //8
 document.write(`<h1> eight Asignment </h1>`);   
 
 let TotalMarks = 200;
 let MarksObtained = 173;
-let Percentage = 173*100/200;
+let Percentage = MarksObtained*100/TotalMarks;
 
 document.write(`
     <div>
