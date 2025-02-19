@@ -20,3 +20,10 @@ for (let i = 1; i <= n; i++) {
     
     console.log(); // Move to the next line
 }
+do {
+    
+} while (condition);
+
+while (condition) {
+    
+}
