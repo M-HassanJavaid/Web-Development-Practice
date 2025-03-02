@@ -35,8 +35,7 @@ greeting('ALi');
 
 
 function subtract( a , b){ // Parame
-    subf = a - b;
-    return subf;
+    return a - b
 }
 
 let sub = subtract( 10 , 1);
