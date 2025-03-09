@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 500px;
+            width: 500px;
+            object-fit: contain;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="greeting()">Greet</button>
+    <img src="img11.webp" onmouseover="ChangeImage(this)" onmouseout="RevertImage(this)">
+    <p onmousedown="ChangeEmoji(this)" style="font-size: 3rem; width: min-content;">😂</p>
+    <input type="text" onfocus="changeColor(this)" onblur="samecolor(this)">
+    <script src="app.js"></script>
+</body>
+</html>
