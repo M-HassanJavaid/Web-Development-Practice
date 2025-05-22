@@ -1,0 +1,206 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #121212; /* dark background for contrast */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+    border: 2px solid #00bcd4;
+}
+
+#container:hover > #controls {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+#controls {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    transition: opacity 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+#videoState {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    user-select: none;
+}
+
+.fa-solid {
+    color: #00bcd4;
+    font-size: 3rem;
+    cursor: pointer;
+    filter: drop-shadow(0 0 3px #00bcd4);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fa-solid:hover {
+    color: #26e6ff;
+    transform: scale(1.15);
+}
+
+.fa-pause {
+    display: none;
+}
+
+/* Progress Bar */
+#progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: calc(100% - 20px);
+    background: transparent;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 55px;
+    left: 10px;
+    height: 8px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px rgba(0, 188, 212, 0.8);
+    transition: box-shadow 0.3s ease;
+}
+
+#progress-bar:hover,
+#progress-bar:focus {
+    box-shadow: inset 0 0 10px rgba(38, 230, 255, 1);
+}
+
+/* Track */
+.range::-webkit-slider-runnable-track {
+    height: 8px;
+    background: linear-gradient(90deg, #00bcd4 0%, #005f73 100%);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.range::-moz-range-track {
+    height: 8px;
+    background: linear-gradient(90deg, #00bcd4 0%, #005f73 100%);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+/* Thumb */
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    background: #00bcd4;
+    border: 3px solid #ffffffcc;
+    border-radius: 50%;
+    margin-top: -5px;
+    box-shadow: 0 0 8px #00bcd4aa;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.range::-moz-range-thumb {
+    height: 18px;
+    width: 18px;
+    background: #00bcd4;
+    border: 3px solid #ffffffcc;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #00bcd4aa;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.range:hover::-webkit-slider-thumb,
+.range:focus::-webkit-slider-thumb {
+    transform: scale(1.3);
+    box-shadow: 0 0 15px #26e6ff;
+}
+
+.range:hover::-moz-range-thumb,
+.range:focus::-moz-range-thumb {
+    transform: scale(1.3);
+    box-shadow: 0 0 15px #26e6ff;
+}
+
+/* Speed and Volume sliders positioning */
+#speed {
+    bottom: 22px;
+    position: absolute;
+    left: 10px;
+}
+
+#speedDisplay {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 19px;
+    color: #00bcd4;
+    left: 150px;
+    text-shadow: 0 0 6px #00bcd4cc;
+}
+
+#volume {
+    position: absolute;
+    bottom: 22px;
+    right: 60px;
+}
+
+#volume-display {
+    position: absolute;
+    bottom: 19px;
+    right: 10px;
+    color: #00bcd4;
+    font-size: 1.2rem;
+    text-shadow: 0 0 6px #00bcd4cc;
+}
+
+/* Skip buttons: same positions, new style & hover */
+.fa-forward {
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    transform: translateX(-50%);
+    font-size: 2.2rem;
+    color: #00bcd4;
+    cursor: pointer;
+    filter: drop-shadow(0 0 4px #00bcd4);
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.fa-forward:hover {
+    color: #26e6ff;
+    transform: translateX(-50%) scale(1.3);
+}
+
+.fa-backward {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-size: 2.2rem;
+    color: #00bcd4;
+    cursor: pointer;
+    filter: drop-shadow(0 0 4px #00bcd4);
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.fa-backward:hover {
+    color: #26e6ff;
+    transform: scale(1.3);
+}

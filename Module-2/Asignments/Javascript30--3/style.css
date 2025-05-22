@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gap: 0px;
+    --color: rgb(142, 213, 0);
+    --blur: 0px;
+}
+
+#input-container {
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#input-container label input {
+    margin: 10px;
+}
+
+#input-container label {
+    font-size: 1rem;
+}
+
+#image-container{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    padding: var(--gap);
+    border: 10px solid var(--color);
+    background-color: var(--color);
+    filter: blur(var(--blur));
+}

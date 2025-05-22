@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do app</title>
+</head>
+
+<body>
+    <!-- <input type="text" id="input">
+    <button onclick="WriteToDo()">ADD now</button>
+    <button onclick="DeleteAll()">Delete All</button> -->
+    <div id="Work1">
+        <p>Hello</p>
+        <button>Delete</button>
+    </div>
+    <div id="Work2">
+        <p>Hello</p>
+        <button>Delete</button>
+    </div>
+    <div id="Work3">
+        <p>Hello</p>
+        <button>Delete</button>
+    </div>
+    <div id="Work4">
+        <p>Hello</p>
+        <button>Delete</button>
+    </div>
+    <div id="Work5">
+        <p>Hello</p>
+        <button>Delete</button>
+    </div>
+
+
+
+    <script>
+        document.querySelectorAll("button").forEach(button => {
+            button.addEventListener("click", function () {
+                let parentDiv = this.parentElement; // Select the parent <div> of the clicked button
+                console.log(parentDiv); // Logs the specific parent <div>
+            });
+        });
+
+    </script>
+</body>
+
+</html>

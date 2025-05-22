@@ -1,4 +1,4 @@
-let fname = ['Ali' , 123 , false , ]; //array
+let fname = ['Ali' , 123 , false ]; //array
 
 let person = {
     name: 'Ali',

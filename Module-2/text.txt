@@ -1,0 +1,44 @@
+1. What is execution context in javascript and what are its two phases?
+
+When our Javascript run, a execution context create. This execution has two phases Memory and code. In memory phase all variables = undefined and function store in memeory and 
+when code phase run its run or code when a variable and function call. it will search in my memory. 
+5 marks 
+
+2. What will be the output of the following code and why ?
+console.log(name);
+var name = 'Ali';
+
+output: undefined
+
+Its because when our code execute, a execution context create. when our memory phase run it will store value of name : undefined. when our code phase run first it will console.log(name), 
+then it will search in my meemory for name.then it will find name : undefined, so it will print undefined. but when var name = 'Ali' ran it will replace undefined to 'ALI'.
+5 marks 
+
+3. What is Hoisting in Javascript and how does it effect variable declare with var?
+
+Basically, when we access a variable before initialization of variable it is called hoisting. when we do hoisting through var, we get undefined because the var save in my global memory 
+with value = undefined until it initialized in my code. 5 marks 
+
+4 . what will output of the following code : 
+var x = 10;
+conso.log(x,y);
+var y = 20;
+
+output: 10 undefined 5 marks
+
+5. what will this code output: 
+
+sayhello();
+function sayhello(){
+  console.log('hello')
+}
+
+output: 'hello' 5 marks
+
+6. what is the window object in Javascript and how does it relate to this keyword in the global scope?
+
+when our browser load javscript first it load a window object, basically window object is a javscript built in object that provdide us vary useful methods and functions.
+the value this in global refer to the window object beacause this keyword is use to refer its object. 5 marks
+
+30 marks
+

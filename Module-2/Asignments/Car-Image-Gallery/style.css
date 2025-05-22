@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#img-container{
+    height: 500px;
+    width: fit-content;
+    overflow: hidden;
+    border: 5px solid red;
+    border-radius: 15px;
+}
+
+img{
+    height: 100%;
+    transition: all 1s;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-color: black;
+    gap: 20px;
+    perspective: 800px;
+
+}
+
+button{
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-size: 300% 300%;
+    background-image: linear-gradient(45deg, #3506ef, #706ae7, #e2f609fe, #03f9d8);
+    animation: gradientAnimation 3s ease infinite;
+    border: none;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+button:active{
+    color: transparent;
+    background-clip: text;
+    border: 2px solid yellow;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes ImageAnimation { 
+    from{
+        transform: translate(-100%);
+    } 
+
+    to{
+        transform: translate(0%);
+    }
+}

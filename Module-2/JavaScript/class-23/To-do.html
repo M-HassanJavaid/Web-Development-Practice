@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do app</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button onclick="WriteToDo()">ADD now</button>
+    <button onclick="DeleteAll()">Delete All</button>
+    <ul id="Work"></ul>
+
+
+    <script>
+        let input = document.querySelector('#input');
+        let Work = document.querySelector('#Work');
+        function WriteToDo() {
+            let inputValue = input.value;
+            let newElement = document.createElement('li');
+            newElement.innerText = input.value;
+            Work.appendChild(newElement)
+            input.value = ''
+        }
+
+        function saveTasks() {
+            
+        }
+
+        function DeleteAll() {
+            Work.innerHTML = '';
+            localStorage.clear();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email JS</title>
+    <script src="script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "IlhJE7gHmbaRf3AVl",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <input type="text" placeholder="Name">
+    <textarea></textarea>
+    <button>Submit</button>
+</body>
+
+</html>
