@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GenAI CDN Example</title>
+</head>
+<body>
+  <script type="module">
+    // Use the latest version or specify a version number, e.g. @1.12.0
+    import { GoogleGenAI } from 'https://cdn.jsdelivr.net/npm/@google/genai@latest/dist/index.esm.js';
+
+    const ai = new GoogleGenAI({ apiKey: 'YOUR_API_KEY' });
+
+    async function generate() {
+      const response = await ai.models.generateContent({
+        model: 'gemini‑2.0‑flash',  // use a supported model
+        contents: 'Tell me a short joke'
+      });
+      alert(response.text);
+    }
+
+    generate();
+  </script>
+</body>
+</html>

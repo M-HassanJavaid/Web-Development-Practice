@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Draggable Box</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+    }
+
+    #draggable {
+      width: 150px;
+      height: 150px;
+      background-color: #4caf50;
+      color: white;
+      text-align: center;
+      line-height: 150px;
+      position: absolute;
+      cursor: grab;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="draggable">Drag me!</div>
+
+  <script>
+    const dragItem = document.getElementById("draggable");
+
+    let isDragging = false;
+    let offsetX, offsetY;
+
+    dragItem.addEventListener("mousedown", (e) => {
+        console.log('elemeny has picked')
+      isDragging = true;
+      offsetX = e.clientX - dragItem.offsetLeft;
+      offsetY = e.clientY - dragItem.offsetTop;
+      dragItem.style.cursor = "grabbing";
+    });
+
+    document.addEventListener("mousemove", (e) => {
+      if (isDragging) {
+        dragItem.style.left = (e.clientX - offsetX) + "px";
+        dragItem.style.top = (e.clientY - offsetY) + "px";
+      }
+    });
+
+    document.addEventListener("mouseup", () => {
+        console.log('mouse has leave')
+      isDragging = false;
+      dragItem.style.cursor = "grab";
+    });
+  </script>
+
+</body>
+</html>

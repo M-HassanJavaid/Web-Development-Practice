@@ -1,0 +1,23 @@
+Node js consist of V8 engine and some super powers like APIs, Modules etc.
+
+On server if there is node js it will run on V8 engine.
+
+On client side the engine depends upon browser like:
+Chrome => V8 engine
+Internet Explorer => Chakra
+etc..
+
+Our V8 engine is almost 70% written on C++
+
+Node JS almost 23% written on C++
+
+Node Js also little bit written on C++ to emebed V8 engine.
+
+we used C++ to write V8 engine because C++ is very close to low level language and low level language are very fast to run.
+
+how code run on node repl;
+1. create node repl => Run phase
+2. Evaluate the code => Evaluate phase
+3. Print the result => Print phase
+4. then come to the inital stage => Loop
+

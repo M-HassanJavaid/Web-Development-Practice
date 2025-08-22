@@ -1,0 +1,16 @@
+{
+  "name": "class-1",
+  "version": "1.0.0",
+  "description": "first-server-at-SMIT",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start" : "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hassan Javaid",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
