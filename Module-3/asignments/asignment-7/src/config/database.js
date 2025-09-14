@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const uri = 'mongodb+srv://Database:aliaftab321@cluster0.51l7ww2.mongodb.net/UniqueEmail'
+const uri = 'mongodb+srv://hassanjavaidcoder:hassan.92@cluster0.emtxpzn.mongodb.net/LearnMongoose'
 
 
 async function connectDB() {
