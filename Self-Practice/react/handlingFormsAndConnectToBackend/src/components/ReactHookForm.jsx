@@ -49,7 +49,7 @@ const ReactHookForm = () => {
                 type="password"
                 placeholder="Enter your password"
             />
-            {errors.password && <div>{errors.password.message}</div>}
+            {errors.password && <div style={{color: "red"}}>{errors.password.message}</div>}
 
             <button disabled={isSubmitting}>Login</button>
         </form>
